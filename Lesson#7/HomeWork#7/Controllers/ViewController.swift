@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         tableView.register(CustomAlbumCell.self, forCellReuseIdentifier: "reuseIdentifier")
         tableView.register(CustomHeaderView.self, forHeaderFooterViewReuseIdentifier: "headerIdentifier")
         tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 300
         tableView.delegate = self
         tableView.dataSource = self
         return tableView
